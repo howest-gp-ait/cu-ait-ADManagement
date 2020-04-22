@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADManagement.WPF", "ADManagement.WPF\ADManagement.WPF.csproj", "{E91B7BF7-7075-4D0F-A191-5C938BBCD467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADManagement.LIB", "ADManagement.LIB\ADManagement.LIB.csproj", "{03505DDF-287B-470F-B4C6-E4DE64D08255}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E91B7BF7-7075-4D0F-A191-5C938BBCD467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91B7BF7-7075-4D0F-A191-5C938BBCD467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91B7BF7-7075-4D0F-A191-5C938BBCD467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91B7BF7-7075-4D0F-A191-5C938BBCD467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03505DDF-287B-470F-B4C6-E4DE64D08255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03505DDF-287B-470F-B4C6-E4DE64D08255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03505DDF-287B-470F-B4C6-E4DE64D08255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03505DDF-287B-470F-B4C6-E4DE64D08255}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64EB861B-F76C-46C8-97BE-0D749BB70910}
+	EndGlobalSection
+EndGlobal

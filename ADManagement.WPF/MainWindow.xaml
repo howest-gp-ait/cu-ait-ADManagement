@@ -1,0 +1,48 @@
+﻿<Window x:Class="ADManagement.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADManagement.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="794.551" Width="1193.597" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TreeView x:Name="TVOU" HorizontalAlignment="Left" Height="594" Margin="10,24,0,0" VerticalAlignment="Top" Width="322" SelectedItemChanged="TVOU_SelectedItemChanged"/>
+        <TabControl HorizontalAlignment="Left" Height="597" Margin="368,21,0,0" VerticalAlignment="Top" Width="363">
+            <TabItem Header="Users">
+                <Grid >
+                    <ListBox x:Name="lstUsers" HorizontalAlignment="Left" Height="569" Margin="0,0,0,0" VerticalAlignment="Top" Width="357" SelectionChanged="lstUsers_SelectionChanged"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Groups">
+                <Grid >
+                    <ListBox x:Name="lstGroups" HorizontalAlignment="Left" Height="569" Margin="0,0,0,0" VerticalAlignment="Top" Width="357" SelectionChanged="lstGroups_SelectionChanged"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <GroupBox x:Name="grpUser" Header="User details" HorizontalAlignment="Left" Height="569" Margin="761,49,0,0" VerticalAlignment="Top" Width="342">
+            <Grid>
+                <Label x:Name="lblUserDisplayName" Content="-" HorizontalAlignment="Left" Margin="20,43,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblUserFirstName" Content="-" HorizontalAlignment="Left" Margin="20,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.809,1.688"/>
+                <Label x:Name="lblUserLastName" Content="-" HorizontalAlignment="Left" Margin="20,103,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblUserUserName" Content="-" HorizontalAlignment="Left" Margin="20,133,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.972,6.356"/>
+                <ListBox x:Name="lstMemberOff" HorizontalAlignment="Left" Height="352" Margin="10,184,0,0" VerticalAlignment="Top" Width="310"/>
+                <Button x:Name="btnEditUser" Content="Edit" HorizontalAlignment="Left" Height="26" Margin="89,0,0,0" VerticalAlignment="Top" Width="64" Click="btnEditUser_Click"/>
+                <Button x:Name="btnDeleteUser" Content="Delete" HorizontalAlignment="Left" Height="26" Margin="158,0,0,0" VerticalAlignment="Top" Width="64" Click="btnDeleteUser_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpGroup" Header="Group details" HorizontalAlignment="Left" Height="594" Margin="761,624,0,0" VerticalAlignment="Top" Width="342">
+            <Grid>
+                <Button x:Name="btnEditGroup" Content="Edit" HorizontalAlignment="Left" Height="26" Margin="89,5,0,0" VerticalAlignment="Top" Width="64" Click="btnEditGroup_Click"/>
+                <Button x:Name="btnDeleteGroup" Content="Delete" HorizontalAlignment="Left" Height="26" Margin="158,5,0,0" VerticalAlignment="Top" Width="64" Click="btnDeleteGroup_Click" RenderTransformOrigin="0.516,1.115"/>
+
+                <Label x:Name="lblGroupName" Content="-" HorizontalAlignment="Left" Margin="20,46,0,0" VerticalAlignment="Top"/>
+                <ListBox x:Name="lstUsersInGroup" HorizontalAlignment="Left" Height="200" Margin="10,138,0,0" VerticalAlignment="Top" Width="310"/>
+                <ListBox x:Name="lstGroupsInGroup" HorizontalAlignment="Left" Height="200" Margin="10,350,0,0" VerticalAlignment="Top" Width="310"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btnNewUser" Content="New user" HorizontalAlignment="Left" Height="26" Margin="761,10,0,0" VerticalAlignment="Top" Width="64" Click="btnNewUser_Click"/>
+        <Button x:Name="btnNewGroup" Content="New group" HorizontalAlignment="Left" Height="26" Margin="843,10,0,0" VerticalAlignment="Top" Width="85" Click="btnNewGroup_Click"/>
+
+    </Grid>
+</Window>
